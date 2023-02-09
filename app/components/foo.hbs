@@ -1,0 +1,31 @@
+<h1>set</h1>
+
+value: "{{this.changeset1.value}}"
+
+<br />
+
+Can type spaces into this input
+
+<br />
+
+<input
+  value={{this.changeset1.value}}
+  aria-label="one"
+  {{on "input" this.setOne}}
+/>
+
+<h1>tracked</h1>
+
+value: "{{this.changeset2.value}}"
+
+<br />
+
+Cannot type spaces into this input
+
+<br />
+
+<input
+  value={{this.changeset2.value}}
+  aria-label="two"
+  {{on "input" this.setTwo}}
+/>
